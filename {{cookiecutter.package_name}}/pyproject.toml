@@ -1,10 +1,11 @@
 [build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
+requires = ["flit_core<4"]
+build-backend = "flit_core.buildapi"
 
 [project]
 name = "{{cookiecutter.package_name}}"
 version = "1.0.0"
+description = "The basic blog app built in the Flask tutorial."
 requires-python = ">=3.7"
 dependencies = [
     "Flask>=2.2,<3",
